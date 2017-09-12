@@ -1,0 +1,73 @@
+body {
+    /*background-color: #338bd5;*/
+    background-color: #2e2e2e;
+    text-align: center;
+      font-family: 'Raleway', sans-serif;
+}
+/*bootstrap over-rides*/
+.navbar-default{
+  /*background-color:#2e2e2e;*/
+  background-color: 	#1b1b1b;
+  border-color: #1b1b1b;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+/*original styling*/
+.text_stuff{
+  color:#fff;
+}
+.cloud{
+  width:50%;
+  height:150px;
+}
+.cloud_space{
+  margin-bottom: 150px;
+}
+#intro_text{
+  color:#fff;
+  font-family: 'Raleway', sans-serif;
+}
+/*#headText{
+  color: #fff;
+}*/
+#about{
+  background-color: #fff;
+  color:#1b1b1b;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+#testimonial_text{
+  margin-bottom: 50px;
+}
+#submit{
+  width:100%;
+}
+.icons{
+  width:150px;
+  height:150px;
+}
+
+.profile_pics{
+  width:80%;
+  height:80%;
+  border-radius: 100%;
+}
+
+#footer{
+  margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  .profile_pics{
+    width:40%;
+    height:40%;
+    border-radius: 100%;
+  }
+}
