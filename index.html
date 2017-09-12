@@ -22,14 +22,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a id="headerText" class="navbar-brand" href="index.html">Linen</a>
+        <a id="home_link" class="navbar-brand" href="index.html">Linen</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="navbar-collapse collapse in navbar-right" id="bs-example-navbar-collapse-1" aria-expanded="true" style="">
         <ul class="nav navbar-nav navbar-left">
-          <li class=""><a href="">About<span class="sr-only">(current)</span></a></li>
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">Contact</a></li>
+          <li id="about_link" class="links">About</li>
+          <li id="testimonials_link" class="links">Testimonials</li>
+          <li id="contact_link" class="links">Contact</li>
           <li class="dropdown open">
           </li>
         </ul>
@@ -39,9 +39,12 @@
     <!-- /.container-fluid -->
   </nav>
   <div class="container">
-    <div class="row cloud_space">
+    <div class="row cloud_space" id="cloud">
       <h1 class="text_stuff" id="intro_text">Let us help you grow your business.</h1>
-      <img class="cloud" id="cloud_image_one" src="assets/img/cloud.svg" alt="cloud thing">
+      <div class="">
+              <img class="cloud" id="cloud_image" src="assets/img/cloud.svg" alt="cloud thing">
+      </div>
+
       <!-- <h3 class="text_stuff" id="learn_more">Learn more about it below:</h3> -->
       <!-- <img class="cloud" id="cloud_image_two" src="img/cloud.svg" alt="cloud thing">
       <img class="cloud" id="cloud_image_three" src="img/cloud.svg" alt="cloud thing"> -->
@@ -51,20 +54,20 @@
       <h3>It's simple.</h3>
       <hr>
       <div class="row">
-       <div class="col-md-4">
+        <div class="col-md-4">
           <img class="icons" src="assets/img/improvement.svg" alt="">
           <h4>We're Better.</h4>
-       </div>
-       <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
 
           <img class="icons" src="assets/img/faster.svg" alt="">
           <h4>We're Faster.</h4>
-       </div>
-       <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
 
           <img class="icons" src="assets/img/money.svg" alt="">
           <h4>We're Effective.</h4>
-       </div>
+        </div>
       </div>
 
       <!-- <h3>more about us:</h3> -->
@@ -74,58 +77,97 @@
 
       <div class="col-md-3">
         <img class="profile_pics" src="assets/img/profile_linen_1.png" alt="">
-        <h4 class="text_stuff" >Adam (CEO of Business)</h4>
+        <h4 class="text_stuff">Adam (CEO of Business)</h4>
         <p class="text_stuff"><em>"Linen helped my business generate way more revenue than I knew was possible."</em></p>
       </div>
       <div class="col-md-3">
         <img class="profile_pics" src="assets/img/profile_linen_3.png" alt="">
-        <h4 class="text_stuff" >Lily (CFO of Business)</h4>
+        <h4 class="text_stuff">Lily (CFO of Business)</h4>
         <p class="text_stuff"><em>"My team is way more productive because of Linen."</em></p>
       </div>
       <div class="col-md-3">
         <img class="profile_pics" src="assets/img/profile_linen_2.png" alt="">
-        <h4 class="text_stuff" >Adam (CTO of Business)</h4>
+        <h4 class="text_stuff">Adam (CTO of Business)</h4>
         <p class="text_stuff"><em>"A neccessity for your business!"</em></p>
       </div>
       <div class="col-md-3">
         <img class="profile_pics" src="assets/img/profile_linen_4.png" alt="">
-        <h4 class="text_stuff" >Adrianne (CMO of Business)</h4>
+        <h4 class="text_stuff">Adrianne (CMO of Business)</h4>
         <p class="text_stuff"><em>"Linen's product helped make production faster and a smoother process"</em></p>
       </div>
     </div>
-    <div class="" id="contact">
+    <!-- <div class="" id="contact">
 
-    </div>
+    </div> -->
   </div>
   <!-- footer -->
-  <div class="row">
+  <div id="footer" class="row">
     <!-- <footer>
       <p id="footerBorder" class="foot">&copy; Linen</p>
     </footer> -->
-  </div>
-  <!-- <div class="row" id="about">
-    <h2 class="">Why Linen?</h2>
-    <h3>It's simple.</h3>
-    <hr>
     <div class="row">
-     <div class="col-md-4">
-        <img class="icons" src="img/improvement.svg" alt="">
-        <h4>We're Better.</h4>
-     </div>
-     <div class="col-md-4">
+      <div class="col-md-3">
+        <p>Check out our products:</p>
+        <p class="products"><a href="#">Product 1</a></p>
+          <p class="products"><a href="#">Product 2</a></p>
+          <p class="products"><a href="#">Product 3</a></p>
+          <p class="products"><a href="#">Product 4</a></p>
+      </div>
+      <div class="col-md-3">
+        <p>Our founders:</p>
+        <p class="products"><a href="#">Founder 1</a></p>
+          <p class="products"><a href="#">Founder 2</a></p>
+          <p class="products"><a href="#">Founder 3</a></p>
+          <p class="products"><a href="#">Founder 4</a></p>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="row">
+            <label for="fname">Name</label>
+          </div>
 
-        <img class="icons" src="img/faster.svg" alt="">
-        <h4>We're Faster.</h4>
-     </div>
-     <div class="col-md-4">
+          <input type="text" id="fname" name="firstname" placeholder="Your name">
+        </div>
+        <div class="row">
+          <div class="">
+            <label for="femail">Email</label>
+          </div>
 
-        <img class="icons" src="img/money.svg" alt="">
-        <h4>We're Effective.</h4>
-     </div>
+          <input type="text" id="email" name="firstname" placeholder="Your email">
+        </div>
+        <div class="row">
+          <div class="row">
+            <label for="subject">Message</label>
+          </div>
+
+          <textarea name="name" rows="4" cols="20"></textarea>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p>Our Social Media:</p>
+        <p class="products"><a href="#">Facebook</a></p>
+          <p class="products"><a href="#">Medium</a></p>
+          <p class="products"><a href="#">Instagram</a></p>
+          <p class="products"><a href="#">Youtube</a></p>
+      </div>
+
     </div>
-  </div> -->
+    <div class="row">
+          <hr>
+      <p id="footerText" class="foot">Linen Inc. All rights reserved</p>
+      <p> &copy; Copyright Note: This is a temporary website created by Ashish Dommety</p>
+    </div>
+
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="assets/js/animation.js" charset="utf-8"></script>
+  <script src="assets/js/float.js" charset="utf-8"></script>
 </body>
 
 </html>
